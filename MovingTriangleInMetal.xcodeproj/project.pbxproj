@@ -16,6 +16,8 @@
 		A0FB5971298B819400BB565D /* MovingTriangleInMetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5970298B819400BB565D /* MovingTriangleInMetalTests.swift */; };
 		A0FB597B298B819400BB565D /* MovingTriangleInMetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB597A298B819400BB565D /* MovingTriangleInMetalUITests.swift */; };
 		A0FB597D298B819400BB565D /* MovingTriangleInMetalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB597C298B819400BB565D /* MovingTriangleInMetalUITestsLaunchTests.swift */; };
+		A0FB598A298B81B100BB565D /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5989298B81B100BB565D /* Shader.metal */; };
+		A0FB598C298B93AF00BB565D /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB598B298B93AF00BB565D /* Render.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A0FB5976298B819400BB565D /* MovingTriangleInMetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovingTriangleInMetalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FB597A298B819400BB565D /* MovingTriangleInMetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingTriangleInMetalUITests.swift; sourceTree = "<group>"; };
 		A0FB597C298B819400BB565D /* MovingTriangleInMetalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingTriangleInMetalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0FB5989298B81B100BB565D /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		A0FB598B298B93AF00BB565D /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				A0FB5959298B819300BB565D /* AppDelegate.swift */,
 				A0FB595B298B819300BB565D /* SceneDelegate.swift */,
 				A0FB595D298B819300BB565D /* ViewController.swift */,
+				A0FB5989298B81B100BB565D /* Shader.metal */,
+				A0FB598B298B93AF00BB565D /* Render.swift */,
 				A0FB595F298B819300BB565D /* Main.storyboard */,
 				A0FB5962298B819400BB565D /* Assets.xcassets */,
 				A0FB5964298B819400BB565D /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FB598C298B93AF00BB565D /* Render.swift in Sources */,
+				A0FB598A298B81B100BB565D /* Shader.metal in Sources */,
 				A0FB595E298B819300BB565D /* ViewController.swift in Sources */,
 				A0FB595A298B819300BB565D /* AppDelegate.swift in Sources */,
 				A0FB595C298B819300BB565D /* SceneDelegate.swift in Sources */,
@@ -445,6 +453,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +482,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

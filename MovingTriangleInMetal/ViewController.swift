@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import Metal
+import MetalKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var mtkView: MTKView!
+    var renderer: Renderer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let device = MTLCreateSystemDefaultDevice()!
+        renderer = Renderer(device: device, view: mtkView)
     }
-
-
 }
 
